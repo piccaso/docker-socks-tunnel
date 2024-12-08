@@ -22,7 +22,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/ci${{ env.IMAGE_NAME }}
 
       - uses: docker/build-push-action@v6
         with:
