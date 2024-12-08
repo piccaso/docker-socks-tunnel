@@ -1,0 +1,6 @@
+services:
+  socks:
+    build: .
+    command: ["-u", "user", "-P", "password"]
+    ports:
+      - "1080:1080"
